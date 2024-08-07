@@ -1,0 +1,39 @@
+.filter-container .btn-accordion {
+    display: flex;
+    color: var(--primary);
+    font-weight: 600;
+    padding: .8rem 1rem .8rem 0;
+    font-size: .85rem;
+}
+
+.filter-container .btn-accordion:hover {
+    filter: brightness(130%);
+}
+
+.filter-container .btn-accordion::before {
+    font-family: 'bootstrap-icons';
+    color: var(--primary);
+    margin-right: .35rem;
+}
+
+.filter-container .btn-accordion[aria-expanded="false"]::before {
+    content: "\f285";
+}
+
+.filter-container .btn-accordion[aria-expanded="true"]::before {
+    content: "\f282";
+}
+
+.filter-container .filter-body {
+    padding: 0 1.35rem;
+    margin-bottom: 1rem;
+}
+
+.filter-container .filter-btns {
+    display: flex;
+    padding-top: .75rem;
+}
+
+.filter-container label.col-form-label {
+    text-align: left;
+}
